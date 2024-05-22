@@ -72,13 +72,14 @@ if(vx !=0 || vy!= 0){
 		
 // Attack logic  for level 2
 if (room == rm_level2)
-{
+{		
+  
 if (keyboard_check_pressed(vk_space)) {
     if (playerState != "attack") {
         playerState = "attack";
         sprite_index = spr_playerAttack;
 		projectile = 1;
-    //    last_attack_time = current_time;
+   
 		audio_play_sound(snd_grenade,1,false);
     }
 }
@@ -104,6 +105,7 @@ if(playerState == "attack") {
 	}
 	
 	
+				
 	if(image_index >= image_number - 1){
 		playerState = "idle";
 		sprite_index = spr_player_idle;
