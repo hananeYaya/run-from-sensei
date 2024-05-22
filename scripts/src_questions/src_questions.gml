@@ -4,7 +4,7 @@
 //function src_questions(){
 
 //}
-
+/*
 global.src_questions = {};
 
 global.topics[$ "Question"] = [
@@ -26,4 +26,4 @@ global.topics[$ "Choix Vert"] = [
 
 global.topics[$ "Fin de Question"] = [
 	TEXT("Tchao")
-];
+];*/

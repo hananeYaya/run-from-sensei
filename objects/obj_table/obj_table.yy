@@ -6,8 +6,8 @@
   "name":"obj_table",
   "overriddenProperties":[],
   "parent":{
-    "name":"environment",
-    "path":"folders/Objects/environment.yy",
+    "name":"Environnement",
+    "path":"folders/Objects/Environnement.yy",
   },
   "parentObjectId":{
     "name":"obj_par_env",
