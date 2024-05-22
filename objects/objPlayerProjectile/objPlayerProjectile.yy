@@ -9,8 +9,8 @@
   "name":"objPlayerProjectile",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Barre de vie",
+    "path":"folders/Objects/Barre de vie.yy",
   },
   "parentObjectId":null,
   "persistent":false,

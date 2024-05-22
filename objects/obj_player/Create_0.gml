@@ -19,9 +19,11 @@ hasLost = false;
 playerState = "idle"
 
 // refrence barre de vie 
+if (room == rm_level2)
+{
 barreDeVie = instance_create_layer(x, y - 32, "GUI", obj_barreVie);
 barreDeVie.hp = hp;
-
+}
 
 // attack range et attack damage
 attack_range = 50;

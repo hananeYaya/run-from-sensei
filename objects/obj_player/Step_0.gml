@@ -71,6 +71,8 @@ if(vx !=0 || vy!= 0){
 		}
 		
 // Attack logic  for level 2
+if (room == rm_level2)
+{
 if (keyboard_check_pressed(vk_space)) {
     if (playerState != "attack") {
         playerState = "attack";
@@ -102,11 +104,6 @@ if(playerState == "attack") {
 	}
 	
 	
-	
-	
-
-	
-				
 	if(image_index >= image_number - 1){
 		playerState = "idle";
 		sprite_index = spr_player_idle;
@@ -132,20 +129,10 @@ if (hasLost) {
 	room_goto(rm_lose);
 }
 
-
-
-	
-	
-
-
 // Update la position de barre de vie
 barreDeVie.x = x;
-
 barreDeVie.y = y-32;
-
-
-
-
+}
 // sorting depth 
 depth =- y;
 
