@@ -8,8 +8,8 @@
   "name":"obj_par_env",
   "overriddenProperties":[],
   "parent":{
-    "name":"environment",
-    "path":"folders/Objects/environment.yy",
+    "name":"Environnement",
+    "path":"folders/Objects/Environnement.yy",
   },
   "parentObjectId":null,
   "persistent":false,

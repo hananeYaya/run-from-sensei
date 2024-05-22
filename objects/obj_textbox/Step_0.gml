@@ -26,7 +26,8 @@ switch(fadeState) {
         if (image_alpha <= 0) {
             // Queue up next prompt or destroy
             if (promptIndex < array_length(prompt)) {
-                textToShow = prompt[promptIndex++];
+                 textToShow = string_concat((prompt[promptIndex].name),": ",(prompt[promptIndex].prompt));
+				 promptIndex++;
                 fadeState = fadeMe.fadeIn;
                 image_alpha = 0;
             } else {
@@ -35,4 +36,8 @@ switch(fadeState) {
         }
         break;
     }
+}
+
+if (promptIndex >= array_length(prompt)&& keyboard_check_pressed(vk_space)){
+obj_director.move = true;	
 }

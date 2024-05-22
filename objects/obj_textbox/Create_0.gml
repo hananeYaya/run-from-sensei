@@ -1,20 +1,23 @@
 /// @description SetUp
 
 // Variables
-objDirector = instance_find(obj_director, 0); // Trouver l'instance de obj_director
-if (objDirector != noone) {
-    prompt = objDirector.promptList;
-    promptIndex = 0;
-    textToShow = prompt[promptIndex];
-    promptIndex += 1;
+
+prompt = scr_dialogue()
+promptIndex = 0;
+textWidth = 300;
+lineHeight = 28;
+global.playerControl = false;
+
+if (prompt != noone || prompt != undefined ) {
+    textToShow = string_concat((prompt[promptIndex].name),": ",(prompt[promptIndex].prompt));
+	promptIndex ++;
+   
 } else {
-    prompt = [];
-    promptIndex = 0;
     textToShow = "";
+	prompt = [];
 }
 
-textWidth = 450;
-lineHeight = 28; 
+ 
 
 enum fadeMe {
     fadeIn,

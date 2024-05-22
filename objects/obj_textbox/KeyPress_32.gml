@@ -13,6 +13,5 @@ if (image_alpha <= 0 && fadeState == fadeMe.fadeOut) {
 }
 
 if(fadeState == fadeMe.waitForInput && keyboard_check_pressed(vk_space)) {
-            fadeState = fadeMe.fadeOut; 
-        
+       fadeState = fadeMe.fadeOut; 
 }
