@@ -4,7 +4,7 @@
 
 prompt = scr_dialogue()
 promptIndex = 0;
-textWidth = 300;
+textWidth = 500;
 lineHeight = 28;
 global.playerControl = false;
 

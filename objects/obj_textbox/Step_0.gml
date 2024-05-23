@@ -39,5 +39,5 @@ switch(fadeState) {
 }
 
 if (promptIndex >= array_length(prompt)&& keyboard_check_pressed(vk_space)){
-obj_director.move = true;	
+obj_teacher.move = true;
 }

@@ -19,7 +19,7 @@ moveUp = keyboard_check(vk_up);
 moveDown = keyboard_check(vk_down);
 
 // for room level2
-if (instance_exists(obj_teacher)) {
+if (room == rm_level2 &&  instance_exists(obj_teacher)) {
 	move_towards_point(obj_teacher.x, obj_teacher.y, 0.1);
 }
 
