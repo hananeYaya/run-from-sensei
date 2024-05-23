@@ -86,8 +86,6 @@
     {"id":{"name":"RoomQ","path":"rooms/RoomQ/RoomQ.yy",},},
     {"id":{"name":"scr_dialogue","path":"scripts/scr_dialogue/scr_dialogue.yy",},},
     {"id":{"name":"scr_transition","path":"scripts/scr_transition/scr_transition.yy",},},
-    {"id":{"name":"src_actions","path":"scripts/src_actions/src_actions.yy",},},
-    {"id":{"name":"src_questions","path":"scripts/src_questions/src_questions.yy",},},
     {"id":{"name":"snd_grenade","path":"sounds/snd_grenade/snd_grenade.yy",},},
     {"id":{"name":"snd_phone_ring","path":"sounds/snd_phone_ring/snd_phone_ring.yy",},},
     {"id":{"name":"snd_whip","path":"sounds/snd_whip/snd_whip.yy",},},
