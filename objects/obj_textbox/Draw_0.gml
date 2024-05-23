@@ -8,4 +8,5 @@ draw_self();
 draw_set_font(font_prompt);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
+// Dessiner le sprite
 draw_text_ext_color(x,y,textToShow,lineHeight,textWidth,c_black,c_black,c_black,c_black,image_alpha);

@@ -1,7 +1,8 @@
 /// @description 
 
 // Variables
-
+move = false;
+if(room == rm_level2){
 walkSpeed= 2;
 vx = 0;
 vy = 0;
@@ -25,6 +26,8 @@ attack_range = 32;
 attack_damage = irandom_range(5, 15);
 follow_range = 45;
 
+
 // Attack timing variables
 last_attack_time = 0;
 attack_cooldown = 30; // Adjust this value as needed
+};
