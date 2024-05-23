@@ -6,8 +6,8 @@
   "name":"obj_teacher_desk",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environnement",
-    "path":"folders/Objects/Environnement.yy",
+    "name":"environment",
+    "path":"folders/Objects/environment.yy",
   },
   "parentObjectId":{
     "name":"obj_par_env",
