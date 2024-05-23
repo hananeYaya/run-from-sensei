@@ -21,28 +21,32 @@ if(vx !=0 || vy != 0){
 	if !collision_point(x+vx,y,obj_par_env,true,true){
 	  x += vx;
 	}
+	if !collision_point(x,y+vy,obj_par_env,true,true){
+	  y += vy;
+	}
 	
 
 	//ange sprite direction based on movement 
 	if (vx > 0) {
-			//rite_index = spr_prof_right;
-			dir = 0;
-		}
-		if (vx < 0) {
-			//rite_index = spr_prof_left;
-			dir = 2;
-		}
-		if (vy > 0) {
-		//prite_index = spr_prof_down;
-			dir = 3;
-		}
-		if (vy < 0) {
-			//rite_index = spr_prof_up;
-			dir = 1;
-		}
+		//rite_index = spr_prof_right;
+		dir = 0;
+	}
+	if (vx < 0) {
+		//rite_index = spr_prof_left;
+		dir = 2;
+	}
+	if (vy > 0) {
+	//prite_index = spr_prof_down;
+		dir = 3;
+	}
+	if (vy < 0) {
+		//rite_index = spr_prof_up;
+		dir = 1;
+	}
+}
 
-	// Calculate the distance to the player
-	var dist_to_player = distance_to_object(obj_player);
+// Calculate the distance to the player
+var dist_to_player = distance_to_object(obj_player);
 
 // AI logic for attacking or moving towards the player
 if (playerState != "faint") {
@@ -90,12 +94,12 @@ if (playerState != "faint") {
 
 if(room == rm_intro){
 	if(move){
-	var door = instance_nearest(x,y,obj_door);
-move_towards_point(door.x, door.y, 3);
- if (point_distance(x, y, door.x, door.y) < 5) {
-	 room_goto(rm_level2); 
- }
-}
+		var door = instance_nearest(x,y,obj_door);
+		move_towards_point(door.x, door.y, 3);
+		 if (point_distance(x, y, door.x, door.y) < 5) {
+			 room_goto(rm_level2); 
+		}
+	}
 }
 
 
